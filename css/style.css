@@ -3,3 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: black;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+header{
+    justify-content: flex-end;
+    border: 1px solid red;
+    padding-bottom: 20px;
+}
+
+.top-button button{
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 4px;
+    color: white;
+}
+
+i{
+    color: white;
+}
+
+main{
+    flex-grow: 1;
+    overflow: auto;
+    border: 1px solid red;
+    padding: 40px;
+}
+
+.container{
+    height: 1600px;
+    flex-wrap: wrap;
+}
+
+.user{
+    height: 160px;
+    width: 256px;
+    background-color: aqua;
+    margin: 5px;
+}
+
+footer{
+    height: 100px;
+    border: 1px solid red;
+}
