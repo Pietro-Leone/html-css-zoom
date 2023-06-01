@@ -16,7 +16,6 @@ body {
 
 header {
     justify-content: flex-end;
-    border: 1px solid red;
     padding: 5px;
 }
 
@@ -40,19 +39,20 @@ i {
 main {
     flex-grow: 1;
     overflow: auto;
-    border: 1px solid red;
     padding: 40px;
 }
 
 .container {
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .user {
     height: 160px;
     width: 256px;
-    background-color: aqua;
-    margin: 5px;
+    background-image: url("https://picsum.photos/200/300?random=1");
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 
@@ -60,6 +60,7 @@ main {
     position: absolute;
     bottom: 0;
     color: white;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -68,7 +69,6 @@ footer {
     align-items: center;
     color: white;
     background-color: #222222;
-    border: 1px solid #ff0000;
 }
 
 footer button {
@@ -85,19 +85,24 @@ footer i {
     padding: 10px;
 }
 
-.text{
+.text {
     padding-top: 10px;
     font-size: 1rem;
 }
 
-.fa-chevron-up{
+.fa-chevron-up {
     font-size: 1rem;
     padding: 10px;
 }
 
-.quit{
+.inputs,
+.interactions {
+    padding: 5px 0 5px 5px;
+}
+
+.quit {
     height: 100%;
-    line-height: 73px;
+    line-height: 83px;
     background-color: rgba(255, 255, 255, 0.3);
     color: red;
     padding: 0 10px;
